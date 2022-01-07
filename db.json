@@ -6,6 +6,71 @@
       "name": "Kenzinho",
       "age": 38,
       "id": 1
+    },
+    {
+      "email": "naruto@hokage.com",
+      "password": "$2a$10$PhGM1pPz/i1ZRdKTyn/FWOCZnbxNexs902eyDmxH0nfrA3j/huvZK",
+      "name": "naruto",
+      "age": "32",
+      "id": 2
+    }
+  ],
+  "animes": [
+    {
+      "title": "Naruto",
+      "genre": "shounen",
+      "userId": "2",
+      "id": 1
+    },
+    {
+      "title": "One Piece",
+      "genre": "shounen",
+      "userId": "2",
+      "id": 2
+    },
+    {
+      "title": "Boruto",
+      "genre": "shounen",
+      "userId": "2",
+      "id": 3
+    },
+    {
+      "title": "Tokyo Ghoul",
+      "genre": "shounen",
+      "userId": "2",
+      "id": 4
+    }
+  ],
+  "characters": [
+    {
+      "name": "Zabuza",
+      "anime": "Naruto",
+      "id": 1
+    },
+    {
+      "name": "Naruto",
+      "anime": "Naruto",
+      "id": 2
+    },
+    {
+      "name": "Luffy",
+      "anime": "One Piece",
+      "id": 3
+    },
+    {
+      "name": "Zoro",
+      "anime": "One Piece",
+      "id": 4
+    },
+    {
+      "name": "Kaneki",
+      "anime": "Tokyo Ghoul",
+      "id": 5
+    },
+    {
+      "name": "Jason",
+      "anime": "Tokyo Ghoul",
+      "id": 6
     }
   ]
 }
