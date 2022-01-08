@@ -11,24 +11,24 @@ A API tem Endpoints para se cadastrar/login, visualizar animes e personagens.
 POST /register <br/>
 Exemplo: <br/>
 
-{"email": "Zabuza@shinobi.com",
-"password": "123456",
-"name": "Zabuza Momochi",
-"age": "47"
+{"email": "Zabuza@shinobi.com", <br/>
+"password": "123456", <br/>
+"name": "Zabuza Momochi", <br/>
+"age": "47" <br/>
 }
 
-Esse endpoint é necessario para criar um user.
+Esse endpoint é necessario para criar um user. <br/>
 
 Resposta- STATS 201 <br/>
 Exemplo: <br/>
 {
   "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Iktvbm9oYW1hcnVAc2hpbm9iaS5jb20iLCJpYXQiOjE2NDE2MDA5NjgsImV4cCI6MTY0MTYwNDU2OCwic3ViIjoiMyJ9.Ry-BPT69do4H0OCki2OTtZFpLTxzxThz1eS99Z5e6Kc",
-  "user": {
-    "email": "Konohamaru@shinobi.com",
-    "name": "Konohamaru",
-    "age": "47",
-    "id": 3
-  }
+  "user": { <br/>
+    "email": "Konohamaru@shinobi.com", <br/>
+    "name": "Konohamaru", <br/>
+    "age": "47", <br/>
+    "id": 3 <br/>
+  } <br/>
 }
 
 ### Login
@@ -36,8 +36,8 @@ Exemplo: <br/>
 POST /login <br/>
 Exemplo: <br/>
 {
-  "email": "Zabuza@shinobi.com",
-  "password": "123456"
+  "email": "Zabuza@shinobi.com", <br/>
+  "password": "123456" <br/>
 }
 
 Nesse endpoint iremos fazer o login, que da acesso ao Token do usuario, necessario para algumas requisições.
@@ -46,11 +46,11 @@ Resposta- STATS 200 <br/>
 Exemplo: <br/>
 {
   "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InphYnV6YUBzaGlub2JpLmNvbSIsImlhdCI6MTY0MTYwMTE2OSwiZXhwIjoxNjQxNjA0NzY5LCJzdWIiOiI0In0.BJea6Rf81y3Ka0aMBVQan4_5JOzt9rDkXGDrRbADYhA",
-  "user": {
-    "email": "zabuza@shinobi.com",
-    "name": "Zabuza",
-    "age": "68",
-    "id": 4
+  "user": { <br/>
+    "email": "zabuza@shinobi.com", <br/>
+    "name": "Zabuza", <br/>
+    "age": "68", <br/>
+    "id": 4 <br/>
   }
 }
 
@@ -67,31 +67,28 @@ Exemplo: <br/>
 
 [
   {
-    "title": "Naruto",
-    "genre": "shounen",
-    "userId": "2",
-    "id": 1
-Resposta- STATUS 200 <br/>
-Exemplo: <br/>
-
+    "title": "Naruto", <br/>
+    "genre": "shounen", <br/>
+    "userId": "2", <br/>
+    "id": 1 <br/>
   },
   {
-    "title": "One Piece",
-    "genre": "shounen",
-    "userId": "2",
-    "id": 2
+    "title": "One Piece", <br/>
+    "genre": "shounen", <br/>
+    "userId": "2", <br/>
+    "id": 2 <br/>
   },
   {
-    "title": "Boruto",
-    "genre": "shounen",
-    "userId": "2",
-    "id": 3
+    "title": "Boruto", <br/>
+    "genre": "shounen", <br/>
+    "userId": "2", <br/>
+    "id": 3 <br/>
   },
   {
-    "title": "Tokyo Ghoul",
-    "genre": "shounen",
-    "userId": "2",
-    "id": 4
+    "title": "Tokyo Ghoul", <br/>
+    "genre": "shounen", <br/>
+    "userId": "2", <br/>
+    "id": 4 <br/>
   }
   ]
 
@@ -102,8 +99,8 @@ Exemplo: <br/>
 
 GET /characters <br/>
 Exemplo: <br/>
-{},
-{headers: {Authentication: Bearer ${Token} } }
+{}, <br/>
+{headers: {Authentication: Bearer ${Token} } } <br/>
 
 Não é preciso fazer um corpo para requisição, apenas utilizar o token obtido no Endpoint de login.
 
@@ -114,34 +111,34 @@ Exemplo: <br/>
 
 [
   {
-    "name": "Zabuza",
-    "anime": "Naruto",
-    "id": 1
+    "name": "Zabuza", <br/>
+    "anime": "Naruto", <br/>
+    "id": 1 <br/>
   },
   {
-    "name": "Naruto",
-    "anime": "Naruto",
-    "id": 2
+    "name": "Naruto", <br/>
+    "anime": "Naruto",<br/>
+    "id": 2<br/>
   },
   {
-    "name": "Luffy",
-    "anime": "One Piece",
-    "id": 3
+    "name": "Luffy",<br/>
+    "anime": "One Piece",<br/>
+    "id": 3<br/>
   },
   {
-    "name": "Zoro",
-    "anime": "One Piece",
-    "id": 4
+    "name": "Zoro",<br/>
+    "anime": "One Piece",<br/>
+    "id": 4<br/>
   },
   {
-    "name": "Kaneki",
-    "anime": "Tokyo Ghoul",
-    "id": 5
+    "name": "Kaneki",<br/>
+    "anime": "Tokyo Ghoul",<br/>
+    "id": 5<br/>
   },
   {
-    "name": "Jason",
-    "anime": "Tokyo Ghoul",
-    "id": 6
+    "name": "Jason",<br/>
+    "anime": "Tokyo Ghoul",<br/>
+    "id": 6<br/>
   }
 ]
 
@@ -149,11 +146,11 @@ Exemplo: <br/>
 POST /characters <br/>
 Exemplo: <br/>
 {
-    "name": "Kaidou",
-    "anime": "One Piece"
+    "name": "Kaidou", <br/>
+    "anime": "One Piece" <br/>
   
-  },
-{headers: {Authentication: Bearer ${Token} } }
+  }, <br/>
+{headers: {Authentication: Bearer ${Token} } } <br/>
 
 É necessario utilizar esse formato de requisição, assim como o token de usuario.
 
@@ -162,9 +159,9 @@ Exemplo: <br/>
 
 
 {
-  "name": "Kaidou",
-  "anime": "One Piece",
-  "id": 8
+  "name": "Kaidou", <br/>
+  "anime": "One Piece", <br/>
+  "id": 8 <br/>
 }
 
 
