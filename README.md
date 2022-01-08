@@ -1,6 +1,8 @@
 # json-server-api-animes
 
-Api Fake com Animes e seus respectivos personagens. 
+Api Fake com Animes e seus respectivos personagens. <br/>
+URL: "https://json-server-animes-api.herokuapp.com/"
+
 
 ## Endpoints
 
@@ -19,7 +21,7 @@ Exemplo: <br/>
 
 Esse endpoint é necessario para criar um user. <br/>
 
-Resposta- STATS 201 <br/>
+Resposta- STATUS 201 <br/>
 Exemplo: <br/>
 {
   "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Iktvbm9oYW1hcnVAc2hpbm9iaS5jb20iLCJpYXQiOjE2NDE2MDA5NjgsImV4cCI6MTY0MTYwNDU2OCwic3ViIjoiMyJ9.Ry-BPT69do4H0OCki2OTtZFpLTxzxThz1eS99Z5e6Kc",
